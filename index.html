@@ -10,7 +10,7 @@
 <!-- ===== HEADER =============================== -->
 
 	<header>
-		<nav>
+		<nav role="navigation">
 			<a class="logo"><img src="img/logo.svg" width="160" height="65" alt="logo"></a>
 			<ul>
 				<li><a href="about.html">Студия</a></li>
@@ -22,27 +22,6 @@
 		<ul>
 			<li><a href="user/cart.html">Корзина</a></li>
 		</ul>
-
-		<section>
-			<h2 class="hidden">Наш девиз</h2>
-			<p>Долго, дорого, скурпулезно</p>
-			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-			<a href="about.html">Узнать больше</a>
-		</section>
-
-		<input type="radio" name="slide-toggle">
-		<input type="radio" name="slide-toggle">
-		<input type="radio" name="slide-toggle">
-		<div class="">
-			<label for="">Слайд 1</label>
-			<label for="">Слайд 2</label>
-			<label for="">Слайд 3</label>
-		</div>
-		<figure>
-			<img src="img/slide-1.png" width="698" height="413" alt="Пример дизайна мобильного приложения">
-			<img src="img/slide-2.png" width="663" height="430" alt="Пример дизайна сайта">
-			<img src="img/slide-3.png" width="759" height="411" alt="Пример дизайна приложения">
-		</figure>
 	</header>
 
 
@@ -50,6 +29,31 @@
 
 	<main>
 		<h1 class="hidden">Дизайн-студия &laquo;Нёрдс&raquo;</h1>
+
+		<section>
+			<h2 class="hidden">Наш дизайн</h2>
+			<p>Долго, дорого, скурпулезно</p>
+			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+			<a href="about.html">Узнать больше</a>
+
+			<input id="slide1" type="radio" name="slide-toggle" checked>
+			<input id="slide2" type="radio" name="slide-toggle">
+			<input id="slide3" type="radio" name="slide-toggle">
+			<div class="">
+				<label for="slide1">Слайд-1</label>
+				<label for="slide2">Слайд-2</label>
+				<label for="slide3">Слайд-3</label>
+			</div>
+			<figure>
+				<img src="img/slide-1.png" width="698" height="413" alt="Пример дизайна мобильного приложения">
+			</figure>
+			<figure>
+				<img src="img/slide-2.png" width="663" height="430" alt="Пример дизайна сайта">
+			</figure>
+			<figure>
+				<img src="img/slide-3.png" width="759" height="411" alt="Пример дизайна приложения">
+			</figure>
+		</section>
 
 		<section>
 			<h2 class="hidden">Мы разрабатываем</h2>
