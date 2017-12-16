@@ -49,8 +49,8 @@
 						</div>
 					</div>
 					<div class="filter__price">
-						от <input class="filter__price-input" id="filter-price-min" name="price-min" type="number" min="0" max="15000" step="100" value="0">
-						до <input class="filter__price-input" id="filter-price-max" name="price-max" type="number" min="0" max="15000" step="100" value="15000">
+						от <input class="filter__price-input input-reset" id="filter-price-min" name="price-min" type="number" min="0" max="15000" step="100" value="0">
+						до <input class="filter__price-input input-reset" id="filter-price-max" name="price-max" type="number" min="0" max="15000" step="100" value="15000">
 					</div>
 				</fieldset>
 				<fieldset class="filter__group">
@@ -103,7 +103,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button class="filter__send btn btn--grey" type="submit">Показать</button>
+				<button class="filter__send btn btn--grey btn-reset" type="submit">Показать</button>
 			</form>
 		</section>
 
@@ -111,23 +111,23 @@
 			<h3 class="sort__title">Сортировать:</h3>
 			<ul class="sort__list sort__list--type">
 				<li class="sort__item">
-					<button class="sort__action sort__action--active" type="button">По цене</button>
+					<button class="sort__action sort__action--active btn-reset" type="button">По цене</button>
 				</li>
 				<li class="sort__item">
-					<button class="sort__action" type="button">По типу</button>
+					<button class="sort__action btn-reset" type="button">По типу</button>
 				</li>
 				<li class="sort__item">
-					<button class="sort__action" type="button">По названию</button>
+					<button class="sort__action btn-reset" type="button">По названию</button>
 				</li>
 			</ul>
 			<ul class="sort__list sort__list--order">
 				<li class="sort__item">
-					<button class="sort__action sort__icon sort__icon--down sort__icon--active" type="button">
+					<button class="sort__action sort__icon sort__icon--down sort__icon--active btn-reset" type="button">
 						<span class="hidden">По убыванию</span>
 					</button>
 				</li>
 				<li class="sort__item">
-					<button class="sort__action sort__icon sort__icon--up" type="button">
+					<button class="sort__action sort__icon sort__icon--up btn-reset" type="button">
 						<span class="hidden">По возрастанию</span>
 					</button>
 				</li>
@@ -258,15 +258,15 @@
 		<form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
 			<p class="write-us__item">
 				<label class="write-us__label" for="write-us-name">Ваше имя:</label>
-				<input class="write-us__input" id="write-us-name" name="name" type="text" value="" placeholder="Представьтесь, пожалуйста" autocomplete="on">
+				<input class="write-us__input input-reset" id="write-us-name" name="name" type="text" value="" placeholder="Представьтесь, пожалуйста" autocomplete="on">
 			</p>
 			<p class="write-us__item">
 				<label class="write-us__label" for="write-us-email">Ваш e-mail:</label>
-				<input class="write-us__input" id="write-us-email" name="email" type="email" value="" placeholder="Для отправки ответа" autocomplete="on">
+				<input class="write-us__input input-reset" id="write-us-email" name="email" type="email" value="" placeholder="Для отправки ответа" autocomplete="on">
 			</p>
 			<p class="write-us__item">
 				<label class="write-us__label" for="write-us-text">Текст письма:</label>
-				<textarea class="write-us__input write-us__input--textarea" id="write-us-text" name="text" cols="30" rows="10" placeholder="В свободной форме" spellcheck></textarea>
+				<textarea class="write-us__input write-us__input--textarea input-reset" id="write-us-text" name="text" cols="30" rows="10" placeholder="В свободной форме" spellcheck></textarea>
 			</p>
 			<button class="write-us__send btn btn--red btn-reset" type="submit">Отправить</button>
 		</form>
