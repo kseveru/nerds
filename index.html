@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>«Нёрдс» - дизайн-студия</title>
@@ -9,122 +9,159 @@
 
 <!-- ===== HEADER =============================== -->
 
-	<header>
-		<nav role="navigation">
-			<a class="logo"><img src="img/logo.svg" width="160" height="65" alt="logo"></a>
-			<ul>
-				<li><a href="about.html">Студия</a></li>
-				<li><a href="clients.html">Клиенты</a></li>
-				<li><a href="catalog.html">Магазин</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
+	<header class="page-header">
+		<nav class="site-nav" role="navigation">
+			<a class="site-nav__logo">
+				<img class="site-nav__logo-img" src="img/logo.svg" width="160" height="65" alt="logo">
+			</a>
+			<ul class="site-nav__list">
+				<li class="site-nav__item"><a class="site-nav__link" href="about.html">Студия</a></li>
+				<li class="site-nav__item"><a class="site-nav__link" href="clients.html">Клиенты</a></li>
+				<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Магазин</a></li>
+				<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
 			</ul>
 		</nav>
-		<ul>
-			<li><a href="user/cart.html">Корзина</a></li>
+
+		<ul class="user-tools">
+			<li class="user-tools__item"><a class="user-tools__link" href="user/cart.html">Корзина</a></li>
 		</ul>
 	</header>
 
 
-<!-- ===== CONTENT =============================== -->
+<!-- ===== CONTENT ============================== -->
 
-	<main>
+	<main class="page-main">
 		<h1 class="hidden">Дизайн-студия &laquo;Нёрдс&raquo;</h1>
 
-		<section>
+		<section class="our-design">
 			<h2 class="hidden">Наш дизайн</h2>
-			<p>Долго, дорого, скурпулезно</p>
-			<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-			<a href="about.html">Узнать больше</a>
-
-			<input id="slide1" type="radio" name="slide-toggle" checked>
-			<input id="slide2" type="radio" name="slide-toggle">
-			<input id="slide3" type="radio" name="slide-toggle">
-			<div class="">
-				<label for="slide1">Слайд-1</label>
-				<label for="slide2">Слайд-2</label>
-				<label for="slide3">Слайд-3</label>
-			</div>
-			<figure>
-				<img src="img/slide-1.png" width="698" height="413" alt="Пример дизайна мобильного приложения">
-			</figure>
-			<figure>
-				<img src="img/slide-2.png" width="663" height="430" alt="Пример дизайна сайта">
-			</figure>
-			<figure>
-				<img src="img/slide-3.png" width="759" height="411" alt="Пример дизайна приложения">
-			</figure>
+			<p class="our-design__slogan">Долго, дорого, скурпулезно</p>
+			<p class="our-design__text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+			<a class="our-design__link btn btn--red" href="about.html">Узнать больше</a>
+			<article class="slider">
+				<input class="hidden" id="slide1" type="radio" name="slide-toggle" checked>
+				<input class="hidden" id="slide2" type="radio" name="slide-toggle">
+				<input class="hidden" id="slide3" type="radio" name="slide-toggle">
+				<div class="slider__toggle">
+					<label class="slider__insicator" for="slide1">Слайд-1</label>
+					<label class="slider__insicator" for="slide2">Слайд-2</label>
+					<label class="slider__insicator" for="slide3">Слайд-3</label>
+				</div>
+				<figure class="slider__slide slider__slide--1">
+					<img src="img/slide-1.png" width="698" height="413" alt="Пример дизайна мобильного приложения">
+				</figure>
+				<figure class="slider__slide slider__slide--2">
+					<img src="img/slide-2.png" width="663" height="430" alt="Пример дизайна сайта">
+				</figure>
+				<figure class="slider__slide slider__slide--3">
+					<img src="img/slide-3.png" width="759" height="411" alt="Пример дизайна приложения">
+				</figure>
+			</article>
 		</section>
 
-		<section>
+		<section class="our-develop">
 			<h2 class="hidden">Мы разрабатываем</h2>
-			<ul>
-				<li>
-					<h3>Веб-сайты</h3>
-					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a href="contacts.html">Заказать</a>
+			<ul class="our-develop__list">
+				<li class="our-develop__item">
+					<h3 class="our-develop__title">Веб-сайты</h3>
+					<p class="our-develop__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a class="our-develop__link btn btn--red" href="contacts.html">Заказать</a>
 				</li>
-				<li>
-					<h3>Приложения</h3>
-					<p>Покорите топ-10 приложений в AppStore b Google Play</p>
-					<a href="contacts.html">Заказать</a>
+				<li class="our-develop__item">
+					<h3 class="our-develop__title">Приложения</h3>
+					<p class="our-develop__text">Покорите топ-10 приложений в AppStore b Google Play</p>
+					<a class="our-develop__link btn btn--green" href="contacts.html">Заказать</a>
 				</li>
-				<li>
-					<h3>Презентации</h3>
-					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a href="contacts.html">Заказать</a>
+				<li class="our-develop__item">
+					<h3 class="our-develop__title">Презентации</h3>
+					<p class="our-develop__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+					<a class="our-develop__link btn btn--yellow" href="contacts.html">Заказать</a>
 				</li>
 			</ul>
 		</section>
 
-		<section>
-			<h2>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара</h2>
-			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-			<p>Выполняем заказы на разработку:</p>
-			<ul>
-				<li>Веб-сайтов любой сложности</li>
-				<li>Мобильных приложений для iOS и Android</li>
-				<li>Слайдшоу и видео для корпоративных презентаций</li>
-			</ul>
-			<p>С 2004 года любим точность во всем:</p>
-			<ul>
-				<li><span>146%</span> уровень самоотдачи</li>
-				<li><span>100%</span> соблюдение сроков</li>
-				<li><span>50%</span> минимальная предоплата</li>
+		<section class="about-us">
+			<h2 class="about-us__title">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара</h2>
+			<p class="about-us__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+			<article class="our-services">
+				<h3 class="our-services__title">Выполняем заказы на разработку:</h3>
+				<ul class="our-services__list">
+					<li class="our-services__item">Веб-сайтов любой сложности</li>
+					<li class="our-services__item">Мобильных приложений для iOS и Android</li>
+					<li class="our-services__item">Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</article>
+			<p class="about-us__born">С 2004 года любим точность во всем:</p>
+			<ul class="about-us__list">
+				<li class="about-us__item"><span class="about-us__data">146%</span> уровень самоотдачи</li>
+				<li class="about-us__item"><span class="about-us__data">100%</span> соблюдение сроков</li>
+				<li class="about-us__item"><span class="about-us__data">50%</span> минимальная предоплата</li>
 			</ul>
 		</section>
 
-		<section>
+		<section class="our-work">
 			<h2 class="hidden">Наши работы</h2>
-			<ul>
-				<li><a href="catalog/html-academy.html"><img src="img/work-1.png" width="199" height="68" alt="html academy"></a></li>
-				<li><a href="catalog/barbershop-borodinski.html"><img src="img/work-2.png" width="209" height="90" alt="barbershop Borodinski"></a></li>
-				<li><a href="catalog/pink.html"><img src="img/work-3.png" width="185" height="52" alt="Pink"></a></li>
-				<li><a href="catalog/mishka.html"><img src="img/work-4.png" width="173" height="84" alt="Mishka"></a></li>
+			<ul class="our-work__list">
+				<li class="our-work__item"><a class="our-work__link" href="catalog/html-academy.html"><img src="img/work-1.png" width="199" height="68" alt="html academy"></a></li>
+				<li class="our-work__item"><a class="our-work__link" href="catalog/barbershop-borodinski.html"><img src="img/work-2.png" width="209" height="90" alt="barbershop Borodinski"></a></li>
+				<li class="our-work__item"><a class="our-work__link" href="catalog/pink.html"><img src="img/work-3.png" width="185" height="52" alt="Pink"></a></li>
+				<li class="our-work__item"><a class="our-work__link" href="catalog/mishka.html"><img src="img/work-4.png" width="173" height="84" alt="Mishka"></a></li>
 			</ul>
 		</section>
 	</main>
 
-	<footer>
-		<section>
-			<h2 class="hidden">Где мы находимся</h2>
-			<img src="img/map.png" width="1440" height="416" alt="Как добраться: ул. Б. Конюшенная, д. 19/8">
 
-			<h3>Nёrds design studio</h3>
-			<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-			<span>тел. +7 (812) 275-75-75</span></p>
-			<a href="contacts.html">Напишите нам</a>
+<!-- ===== FOOTER =============================== -->
+
+	<footer class="page-footer">
+
+		<section class="our-contacts">
+			<h2 class="hidden">Где мы находимся</h2>
+			<img class="our-contacts__map" src="img/map.png" width="1440" height="416" alt="Как добраться: ул. Б. Конюшенная, д. 19/8">
+
+			<article class="our-address">
+				<h3 class="our-address__title">Nёrds design studio</h3>
+				<address class="our-address__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+				<span class="our-address__tel">тел. +7 (812) 275-75-75</span></address>
+				<a class="our-address__link btn btn--red" href="contacts.html">Напишите нам</a>
+			</article>
 		</section>
 
-		<aside>
-			<h2>Давайте дружить, это выгодно!</h2>
-			<p>Скидка 10% для друзей из социальных сетей</p>
-			<ul>
-				<li><a href="https://vk.com">Мы во Вконтакте</a></li>
-				<li><a href="https://www.facebook.com">Мы в Фейсбуке</a></li>
-				<li><a href="https://www.instagram.com">Мы в Инстаграме</a></li>
+		<aside class="social">
+			<h2 class="social__title">Давайте дружить, это выгодно!</h2>
+			<p class="social__text">Скидка 10% для друзей из социальных сетей</p>
+			<ul class="social__list">
+				<li class="social__item"><a class="social__link" href="https://vk.com">Мы во Вконтакте</a></li>
+				<li class="social__item"><a class="social__link" href="https://www.facebook.com">Мы в Фейсбуке</a></li>
+				<li class="social__item"><a class="social__link" href="https://www.instagram.com">Мы в Инстаграме</a></li>
 			</ul>
 		</aside>
+
 	</footer>
+
+
+<!-- ===== POPUP ================================ -->
+
+	<!-- ===== WRITE-US ===== -->
+	<article class="popup write-us">
+		<h2 class="popup__title">Напишите нам</h2>
+		<form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="write-us__item">
+				<label class="write-us__label" for="write-us-name">Ваше имя:</label>
+				<input class="write-us__input" id="write-us-name" name="name" type="text" value="" placeholder="Представьтесь, пожалуйста" autocomplete="on">
+			</p>
+			<p class="write-us__item">
+				<label class="write-us__label" for="write-us-email">Ваш e-mail:</label>
+				<input class="write-us__input" id="write-us-email" name="email" type="email" value="" placeholder="Для отправки ответа" autocomplete="on">
+			</p>
+			<p class="write-us__item">
+				<label class="write-us__label" for="write-us-text">Текст письма:</label>
+				<textarea class="write-us__input write-us__input--textarea" id="write-us-text" name="text" cols="30" rows="10" placeholder="В свободной форме" spellcheck></textarea>
+			</p>
+			<button class="write-us__send btn btn--red btn-reset" type="submit">Отправить</button>
+		</form>
+		<button class="popup__close btn-reset" type="button"><span class="hidden">Закрыть окно</span></button>
+	</article>
 
 </body>
 </html>
