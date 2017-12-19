@@ -4,27 +4,30 @@
 	<meta charset="UTF-8">
 	<title>«Нёрдс» - дизайн-студия</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <!-- ===== HEADER =============================== -->
 
 	<header class="page-header">
-		<nav class="site-nav" role="navigation">
-			<a class="site-nav__logo">
-				<img class="site-nav__logo-img" src="img/logo.svg" width="160" height="65" alt="logo">
-			</a>
-			<ul class="site-nav__list">
-				<li class="site-nav__item"><a class="site-nav__link" href="about.html">Студия</a></li>
-				<li class="site-nav__item"><a class="site-nav__link" href="clients.html">Клиенты</a></li>
-				<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Магазин</a></li>
-				<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+		<div class="menu-wrap page-container">
+			<nav class="site-nav" role="navigation">
+				<a class="site-nav__logo">
+					<img class="site-nav__logo-img" src="img/logo.svg" width="160" height="65" alt="logo">
+				</a>
+				<ul class="site-nav__list">
+					<li class="site-nav__item"><a class="site-nav__link" href="about.html">Студия</a></li>
+					<li class="site-nav__item"><a class="site-nav__link" href="clients.html">Клиенты</a></li>
+					<li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Магазин</a></li>
+					<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+			<ul class="user-tools">
+				<li class="user-tools__item"><a class="user-tools__link user-tools__link--icon user-tools__link--cart" href="user/cart.html">Корзина</a></li>
 			</ul>
-		</nav>
-
-		<ul class="user-tools">
-			<li class="user-tools__item"><a class="user-tools__link" href="user/cart.html">Корзина</a></li>
-		</ul>
+		</div>
 	</header>
 
 
@@ -33,33 +36,37 @@
 	<main class="page-main">
 		<h1 class="hidden">Дизайн-студия &laquo;Нёрдс&raquo;</h1>
 
-		<section class="our-design">
-			<h2 class="hidden">Наш дизайн</h2>
-			<p class="our-design__slogan">Долго, дорого, скурпулезно</p>
-			<p class="our-design__text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-			<a class="our-design__link btn btn--red" href="about.html">Узнать больше</a>
-			<article class="slider">
+		<div class="slider-wrap">
+			<section class="slider page-container">
+				<h2 class="hidden">Наш дизайн</h2>
 				<input class="hidden" id="slide1" type="radio" name="slide-toggle" checked>
 				<input class="hidden" id="slide2" type="radio" name="slide-toggle">
 				<input class="hidden" id="slide3" type="radio" name="slide-toggle">
 				<div class="slider__toggle">
-					<label class="slider__insicator" for="slide1">Слайд-1</label>
-					<label class="slider__insicator" for="slide2">Слайд-2</label>
-					<label class="slider__insicator" for="slide3">Слайд-3</label>
+					<label class="slider__indicator" for="slide1"><span class="hidden">Слайд-1</span></label>
+					<label class="slider__indicator" for="slide2"><span class="hidden">Слайд-2</span></label>
+					<label class="slider__indicator" for="slide3"><span class="hidden">Слайд-3</span></label>
 				</div>
-				<figure class="slider__slide slider__slide--1">
-					<img src="img/slide-1.png" width="698" height="413" alt="Пример дизайна мобильного приложения">
-				</figure>
-				<figure class="slider__slide slider__slide--2">
-					<img src="img/slide-2.png" width="663" height="430" alt="Пример дизайна сайта">
-				</figure>
-				<figure class="slider__slide slider__slide--3">
-					<img src="img/slide-3.png" width="759" height="411" alt="Пример дизайна приложения">
-				</figure>
-			</article>
-		</section>
+				<article class="slide slide--1">
+					<h3 class="slide__slogan">Долго, дорого, скурпулезно</h3>
+					<p class="slide__text">Математически выверенный дизайн<br>
+					для вашего сайта или мобильного приложения.</p>
+					<a class="slide__link btn btn--red" href="about.html">Узнать больше</a>
+				</article>
+				<article class="slide slide--2">
+					<h3 class="slide__slogan">Любим математику как никто другой</h3>
+					<p class="slide__text slide__text--wide">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+					<a class="slide__link btn btn--red" href="about.html">Узнать больше</a>
+				</article>
+				<article class="slide slide--3">
+					<h3 class="slide__slogan">Только ночь, только хардкор</h3>
+					<p class="slide__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+					<a class="slide__link btn btn--red" href="about.html">Узнать больше</a>
+				</article>
+			</section>
+		</div>
 
-		<section class="our-develop">
+		<section class="our-develop page-container">
 			<h2 class="hidden">Мы разрабатываем</h2>
 			<ul class="our-develop__list">
 				<li class="our-develop__item">
@@ -80,32 +87,52 @@
 			</ul>
 		</section>
 
-		<section class="about-us">
-			<h2 class="about-us__title">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара</h2>
-			<p class="about-us__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-			<article class="our-services">
-				<h3 class="our-services__title">Выполняем заказы на разработку:</h3>
-				<ul class="our-services__list">
-					<li class="our-services__item">Веб-сайтов любой сложности</li>
-					<li class="our-services__item">Мобильных приложений для iOS и Android</li>
-					<li class="our-services__item">Слайдшоу и видео для корпоративных презентаций</li>
+		<section class="about-us page-container">
+			<div class="about-us__column">
+				<h2 class="about-us__title">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара</h2>
+				<p class="about-us__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<article class="our-services">
+					<h3 class="our-services__title">Выполняем заказы на разработку:</h3>
+					<ul class="our-services__list">
+						<li class="our-services__item">Веб-сайтов любой сложности</li>
+						<li class="our-services__item">Мобильных приложений для iOS и Android</li>
+						<li class="our-services__item">Слайдшоу и видео для корпоративных презентаций</li>
+					</ul>
+				</article>
+			</div>
+			<div class="about-us__data">
+				<p class="about-us__born">С 2004 года любим точность во всем:</p>
+				<ul class="about-us__list">
+					<li class="about-us__item"><span class="about-us__value">146<sup>%</sup></span> Уровень самоотдачи</li>
+					<li class="about-us__item"><span class="about-us__value">100<sup>%</sup></span> Соблюдение сроков</li>
+					<li class="about-us__item"><span class="about-us__value">50<sup>%</sup></span> Минимальная предоплата</li>
 				</ul>
-			</article>
-			<p class="about-us__born">С 2004 года любим точность во всем:</p>
-			<ul class="about-us__list">
-				<li class="about-us__item"><span class="about-us__data">146%</span> уровень самоотдачи</li>
-				<li class="about-us__item"><span class="about-us__data">100%</span> соблюдение сроков</li>
-				<li class="about-us__item"><span class="about-us__data">50%</span> минимальная предоплата</li>
-			</ul>
+			</div>
 		</section>
 
-		<section class="our-work">
-			<h2 class="hidden">Наши работы</h2>
-			<ul class="our-work__list">
-				<li class="our-work__item"><a class="our-work__link" href="catalog/html-academy.html"><img src="img/work-1.png" width="199" height="68" alt="html academy"></a></li>
-				<li class="our-work__item"><a class="our-work__link" href="catalog/barbershop-borodinski.html"><img src="img/work-2.png" width="209" height="90" alt="barbershop Borodinski"></a></li>
-				<li class="our-work__item"><a class="our-work__link" href="catalog/pink.html"><img src="img/work-3.png" width="185" height="52" alt="Pink"></a></li>
-				<li class="our-work__item"><a class="our-work__link" href="catalog/mishka.html"><img src="img/work-4.png" width="173" height="84" alt="Mishka"></a></li>
+		<section class="our-partners page-container">
+			<h2 class="hidden">Наши партнеры</h2>
+			<ul class="our-partners__list">
+				<li class="our-partners__item">
+					<a class="our-partners__link" href="https://htmlacademy.ru/intensive/htmlcss">
+						<img class="our-partners__logo" src="img/partner-1.png" width="199" height="68" alt="html academy">
+					</a>
+				</li>
+				<li class="our-partners__item">
+					<a class="our-partners__link" href="barbershop-borodinski.html">
+						<img class="our-partners__logo" src="img/partner-2.png" width="209" height="90" alt="barbershop Borodinski">
+					</a>
+				</li>
+				<li class="our-partners__item">
+					<a class="our-partners__link" href="pink.html">
+						<img class="our-partners__logo" src="img/partner-3.png" width="185" height="52" alt="Pink">
+					</a>
+				</li>
+				<li class="our-partners__item">
+					<a class="our-partners__link" href="mishka.html">
+						<img class="our-partners__logo" src="img/partner-4.png" width="173" height="84" alt="Mishka">
+					</a>
+				</li>
 			</ul>
 		</section>
 	</main>
@@ -114,17 +141,20 @@
 <!-- ===== FOOTER =============================== -->
 
 	<footer class="page-footer">
-
 		<section class="our-contacts">
 			<h2 class="hidden">Где мы находимся</h2>
 			<img class="our-contacts__map" src="img/map.png" width="1440" height="416" alt="Как добраться: ул. Б. Конюшенная, д. 19/8">
+			<!-- <iframe class="our-contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1513717141447" width="1200" height="416" allowfullscreen></iframe> 
+			<iframe class="our-contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CBUtRIDd~C" width="1200" height="416"></iframe> -->
 
-			<article class="our-address">
-				<h3 class="our-address__title">Nёrds design studio</h3>
-				<address class="our-address__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-				<span class="our-address__tel">тел. +7 (812) 275-75-75</span></address>
-				<a class="our-address__link btn btn--red" href="contacts.html">Напишите нам</a>
-			</article>
+			<div class="our-address-wrap page-container">
+				<article class="our-address">
+					<h3 class="our-address__title">Nёrds design studio</h3>
+					<address class="our-address__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+					<span class="our-address__tel">тел. +7 (812) 275-75-75</span></address>
+					<a class="our-address__link btn btn--red" href="contacts.html">Напишите нам</a>
+				</article>
+			</div>
 		</section>
 
 		<aside class="social">
