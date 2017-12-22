@@ -24,6 +24,7 @@
 					<li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
+
 			<ul class="user-tools">
 				<li class="user-tools__item"><a class="user-tools__link user-tools__link--icon user-tools__link--cart" href="user/cart.html">Корзина</a></li>
 			</ul>
@@ -119,17 +120,17 @@
 					</a>
 				</li>
 				<li class="our-partners__item">
-					<a class="our-partners__link" href="barbershop-borodinski.html">
+					<a class="our-partners__link" href="partners/barbershop-borodinski.html">
 						<img class="our-partners__logo" src="img/partner-2.png" width="209" height="90" alt="barbershop Borodinski">
 					</a>
 				</li>
 				<li class="our-partners__item">
-					<a class="our-partners__link" href="pink.html">
+					<a class="our-partners__link" href="partners/pink.html">
 						<img class="our-partners__logo" src="img/partner-3.png" width="185" height="52" alt="Pink">
 					</a>
 				</li>
 				<li class="our-partners__item">
-					<a class="our-partners__link" href="mishka.html">
+					<a class="our-partners__link" href="partners/mishka.html">
 						<img class="our-partners__logo" src="img/partner-4.png" width="173" height="84" alt="Mishka">
 					</a>
 				</li>
@@ -144,9 +145,8 @@
 		<section class="our-contacts">
 			<h2 class="hidden">Где мы находимся</h2>
 			<img class="our-contacts__map" src="img/map.png" width="1440" height="416" alt="Как добраться: ул. Б. Конюшенная, д. 19/8">
-			<!-- <iframe class="our-contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1513717141447" width="1200" height="416" allowfullscreen></iframe> 
-			<iframe class="our-contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CBUtRIDd~C" width="1200" height="416"></iframe> -->
-
+			<!--<iframe class="our-contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1513717141447" width="1200" height="416" allowfullscreen></iframe>-->
+			<!--<iframe class="our-contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CBUtRIDd~C" width="1200" height="416"></iframe>-->
 			<div class="our-address-wrap page-container">
 				<article class="our-address">
 					<h3 class="our-address__title">Nёrds design studio</h3>
@@ -157,16 +157,17 @@
 			</div>
 		</section>
 
-		<aside class="social">
-			<h2 class="social__title">Давайте дружить, это выгодно!</h2>
-			<p class="social__text">Скидка 10% для друзей из социальных сетей</p>
+		<aside class="social page-container">
+			<div class="social__column">
+				<h2 class="social__title">Давайте дружить, это выгодно!</h2>
+				<p class="social__text">Скидка 10% для друзей из социальных сетей</p>
+			</div>
 			<ul class="social__list">
-				<li class="social__item"><a class="social__link" href="https://vk.com">Мы во Вконтакте</a></li>
-				<li class="social__item"><a class="social__link" href="https://www.facebook.com">Мы в Фейсбуке</a></li>
-				<li class="social__item"><a class="social__link" href="https://www.instagram.com">Мы в Инстаграме</a></li>
+				<li class="social__item"><a class="social__link social__link--vk" href="https://vk.com"><span class="hidden">Мы во Вконтакте</span></a></li>
+				<li class="social__item"><a class="social__link social__link--fb" href="https://www.facebook.com"><span class="hidden">Мы в Фейсбуке</span></a></li>
+				<li class="social__item"><a class="social__link social__link--inst" href="https://www.instagram.com"><span class="hidden">Мы в Инстаграме</span></a></li>
 			</ul>
 		</aside>
-
 	</footer>
 
 
@@ -174,7 +175,7 @@
 
 	<!-- ===== WRITE-US ===== -->
 	<article class="popup write-us">
-		<h2 class="popup__title">Напишите нам</h2>
+		<h2 class="write-us__title">Напишите нам</h2>
 		<form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
 			<p class="write-us__item">
 				<label class="write-us__label" for="write-us-name">Ваше имя:</label>
@@ -184,14 +185,18 @@
 				<label class="write-us__label" for="write-us-email">Ваш e-mail:</label>
 				<input class="write-us__input input-reset" id="write-us-email" name="email" type="email" value="" placeholder="Для отправки ответа" autocomplete="on">
 			</p>
-			<p class="write-us__item">
+			<p class="write-us__item write-us__item--text">
 				<label class="write-us__label" for="write-us-text">Текст письма:</label>
-				<textarea class="write-us__input write-us__input--textarea input-reset" id="write-us-text" name="text" cols="30" rows="10" placeholder="В свободной форме" spellcheck></textarea>
+				<textarea class="write-us__input write-us__input--textarea input-reset" id="write-us-text" name="text" cols="30" rows="4" placeholder="В свободной форме" spellcheck></textarea>
 			</p>
 			<button class="write-us__send btn btn--red btn-reset" type="submit">Отправить</button>
 		</form>
-		<button class="popup__close btn-reset" type="button"><span class="hidden">Закрыть окно</span></button>
+		<button class="popup__close btn-reset" type="button">
+			<span class="hidden">Закрыть окно</span>
+		</button>
 	</article>
 
+
+	<script src="js/popup.js"></script>
 </body>
 </html>
