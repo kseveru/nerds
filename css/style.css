@@ -80,6 +80,7 @@ img {
 	line-height: 18px;
 	text-transform: uppercase;
 	color: #ffffff;
+	text-align: center;
 	vertical-align: baseline;
 
 	border-radius: 2px;
@@ -556,6 +557,7 @@ img {
 
 	min-height: 416px;
 	margin-top: 80px;
+	overflow: hidden;
 
 	text-align: center;
 }
@@ -627,8 +629,8 @@ img {
 .our-address__link {
 	width: 100%;
 	margin-top: 40px;
-	padding-left: 45px;
-	padding-right: 45px;
+	padding-left: 43px;
+	padding-right: 43px;
 }
 
 /* Social
