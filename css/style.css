@@ -259,6 +259,14 @@ img {
 /* FOOTER
 ====================================================================== */
 
+.page-footer {
+	margin-top: 60px;
+}
+
+.page-footer--index {
+	margin-top: 80px;
+}
+
 /* Our contacts
 ======================================================= */
 
@@ -266,7 +274,6 @@ img {
 	position: relative;
 
 	min-height: 416px;
-	margin-top: 80px;
 	overflow: hidden;
 
 	text-align: center;
@@ -429,7 +436,7 @@ img {
 }
 
 
-/* CONTENT
+/* CONTENT INDEX
 ====================================================================== */
 
 .page-main__header {
@@ -751,16 +758,21 @@ img {
 	opacity: 0.1;
 }
 
-/* Catalog
-======================================================= */
+
+/* CONTENT CATALOG
+====================================================================== */
 
 .page-main__columns {
 	display: flex;
 	justify-content: space-between;
 }
 
+.catalog-wrap {
+	width: 760px;
+}
+
 /* Filter
-======================================== */
+======================================================= */
 
 .filter {
 	width: 260px;
@@ -785,6 +797,9 @@ img {
 	text-transform: uppercase;
 	color: #000000;
 }
+
+/* Filter-slider
+======================================== */
 
 .filter-slider {
 	display: flex;
@@ -823,6 +838,8 @@ img {
 	border-radius: 50%;
 
 	box-shadow: 0 2px 0 0 #cccdcd;
+
+	cursor: pointer;
 }
 
 .filter__price {
@@ -835,39 +852,222 @@ img {
 
 .filter__price-input {
 	display: inline-block;
+	width: 85px;
 	margin-left: 10px;
-	padding: 10px;
+	padding: 10px 5px;
 
 	text-align: center;
 
 	background-color: #eeeeee;
 }
 
+/* ====================================== */
 
+.filter__list {
+	margin: 15px 0 0;
+	padding: 0;
 
-
-
-
-.catalog-wrap {
-	width: 760px;
+	list-style: none;
 }
+
+.filter__item {
+	margin-top: 15px;
+}
+
+.filter__send {
+	margin-top: 50px;
+}
+
+/* Sort
+======================================================= */
 
 .sort {
 	display: flex;
-}
-
-
-.catalog {
-	display: flex;
 	justify-content: space-between;
+	margin-top: 55px;
 }
 
-.catalog__list {
+.sort__title {
+	margin: 0;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.sort__list {
+	display: flex;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
 }
+
+.sort__list--type {
+	margin-left: auto;
+}
+
+.sort__list--order {
+	margin-left: 45px;
+}
+
+.sort__item {
+	position: relative;
+}
+
+.sort__item:not(:first-child) {
+	margin-left: 25px;
+}
+
+.sort__action {
+	text-transform: uppercase;
+}
+
+.sort__icon {
+	display: block;
+	margin-top: 5px;
+
+	border-width: 10px 5px;
+	border-style: solid;
+	border-color: transparent;
+}
+.sort__icon--down {
+	border-top-color: #000000;
+	border-bottom: none;
+}
+
+
+.sort__icon--up {
+	border-bottom-color: #000000;
+	border-top: none;
+}
+
+/* Catalog
+======================================================= */
+
+.catalog {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.catalog__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.template {
+	position: relative;
+
+	width: 360px;
+	padding-top: 40px;
+
+	background-color: #000;
+	border-radius: 5px 5px 0 0;
+}
+
+.template:hover,
+.template:focus {
+	background-color: red;
+}
+
+.template:not(:nth-child(-n+2)) {
+	margin-top: 33px;
+}
+
+.template::before {
+	content: "● ● ●";
+
+	position: absolute;
+	left: 15px;
+	top: 8px;
+
+	font-size: 28px;
+
+	color: #ffffff;
+}
+
+.template__action {
+	position: absolute;
+	bottom: 0;
+
+	display: none;
+	padding: 35px 80px 40px;
+
+	text-align: center;
+
+	background-color: #fff;
+}
+
+.template:hover .template__action,
+.template:focus .template__action {
+	display: block;
+}
+
+.template__title {
+	margin: 0;
+}
+
+.template__title-link {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.template__desc {
+	margin: 20px 0;
+
+	line-height: 18px;
+	color: #666;
+}
+
+.template__price {
+	width: 100%;
+}
+
+/* Pagination
+======================================================= */
+
+.pagination {
+	margin-top: 60px;
+}
+
+.pagination__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.pagination__item:not(:first-child) {
+	margin-left: 11px;
+}
+
+.pagination__link {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.pagination__link--full {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+.pagination__link--active {
+	background-color: #fff;
+	box-shadow: inset 0 0 0 2px red;
+}
+
 
 
 /* POPUP
