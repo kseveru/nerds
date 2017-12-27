@@ -5,7 +5,7 @@
 	<title>Магазин готовых шаблонов «Нёрдс»</title>
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
 
 	<header class="page-header">
 		<div class="site-nav-wrap page-container">
-			<nav class="site-nav" role="navigation">
+			<nav class="site-nav">
 				<a class="site-nav__logo" href="index.html">
 					<img class="site-nav__logo-img" src="img/logo.svg" width="160" height="65" alt="logo">
 				</a>
@@ -41,6 +41,7 @@
 
 		<div class="page-main__columns page-container">
 			<section class="filter">
+				<h3 class="hidden">Фильтр</h3>
 				<form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
 					<fieldset class="filter__group">
 						<legend class="filter__group-title">Стоимость:</legend>
@@ -69,17 +70,20 @@
 						<ul class="filter__list">
 							<li class="filter__item">
 								<label class="filter__label">
-									<input class="hidden" name="grid" type="radio" value="adaptive"> Адаптивная
+									<input class="filter__radio hidden" name="grid" type="radio" value="adaptive">
+									<span class="filter__radio-name">Адаптивная</span>
 								</label>
 							</li>
 							<li class="filter__item">
 								<label class="filter__label">
-									<input class="hidden" name="grid" type="radio" value="fixed"> Фиксированная
+									<input class="filter__radio hidden" name="grid" type="radio" value="fixed" disabled checked>
+									<span class="filter__radio-name">Фиксированная</span>
 								</label>
 							</li>
 							<li class="filter__item">
 								<label class="filter__label">
-									<input class="hidden" name="grid" type="radio" value="flexible"> Резиновая
+									<input class="filter__radio hidden" name="grid" type="radio" value="flexible">
+									<span class="filter__radio-name">Резиновая</span>
 								</label>
 							</li>
 						</ul>
@@ -89,27 +93,32 @@
 						<ul class="filter__list">
 							<li class="filter__item">
 								<label class="filter__label">
-									<input class="hidden" name="slider" type="checkbox"> Слайдер
+									<input class="filter__checkbox hidden" name="slider" type="checkbox" disabled checked>
+									<span class="filter__checkbox-name">Слайдер</span>
 								</label>
 							</li>
 							<li class="filter__item">
 								<label class="filter__label">
-									<input class="hidden" name="features" type="checkbox"> Блок преимуществ
+									<input class="filter__checkbox hidden" name="features" type="checkbox">
+									<span class="filter__checkbox-name">Блок преимуществ</span>
 								</label>
 							</li>
 							<li class="filter__item">
 								<label class="filter__label">
-									<input class="hidden" name="news" type="checkbox"> Новости
+									<input class="filter__checkbox hidden" name="news" type="checkbox">
+									<span class="filter__checkbox-name">Новости</span>
 								</label>
 							</li>
 							<li class="filter__item">
 								<label class="filter__label">
-									<input class="hidden" name="gallery" type="checkbox"> Галерея
+									<input class="filter__checkbox hidden" name="gallery" type="checkbox">
+									<span class="filter__checkbox-name">Галерея</span>
 								</label>
 							</li>
 							<li class="filter__item">
 								<label class="filter__label">
-									<input class="hidden" name="cart" type="checkbox"> Корзина
+									<input class="filter__checkbox hidden" name="cart" type="checkbox">
+									<span class="filter__checkbox-name">Корзина</span>
 								</label>
 							</li>
 						</ul>
@@ -134,7 +143,7 @@
 					</ul>
 					<ul class="sort__list sort__list--order">
 						<li class="sort__item">
-							<button class="sort__action sort__icon sort__icon--down sort__icon--active btn-reset" type="button">
+							<button class="sort__action sort__action--active sort__icon sort__icon--down btn-reset" type="button">
 								<span class="hidden">По убыванию</span>
 							</button>
 						</li>
@@ -150,7 +159,7 @@
 					<h3 class="hidden">Каталог шаблонов</h3>
 					<ul class="catalog__list">
 						<li class="catalog__item template" tabindex=0>
-							<img src="img/img-sedona.png" width="360" height="576" alt="sedona">
+							<img class="template__img" src="img/img-sedona.png" width="360" height="576" alt="sedona">
 							<div class="template__action">
 								<h4 class="template__title">
 									<a class="template__title-link" href="catalog/sedona.html">Sedona</a>
@@ -160,7 +169,7 @@
 							</div>
 						</li>
 						<li class="catalog__item template" tabindex=0>
-							<img src="img/img-pink.png" width="360" height="576" alt="pink">
+							<img class="template__img" src="img/img-pink.png" width="360" height="576" alt="pink">
 							<div class="template__action">
 								<h4 class="template__title">
 									<a class="template__title-link" href="catalog/pink.html">Pink APP</a>
@@ -170,7 +179,7 @@
 							</div>
 						</li>
 						<li class="catalog__item template" tabindex=0>
-							<img src="img/img-barbershop.png" width="360" height="576" alt="barbershop">
+							<img class="template__img" src="img/img-barbershop.png" width="360" height="576" alt="barbershop">
 							<div class="template__action">
 								<h4 class="template__title">
 									<a class="template__title-link" href="catalog/barbershop.html">Barbershop</a>
@@ -180,7 +189,7 @@
 							</div>
 						</li>
 						<li class="catalog__item template" tabindex=0>
-							<img src="img/img-mishka.png" width="360" height="576" alt="mishka">
+							<img class="template__img" src="img/img-mishka.png" width="360" height="576" alt="mishka">
 							<div class="template__action">
 								<h4 class="template__title">
 									<a class="template__title-link" href="catalog/mishka.html">Mishka</a>
@@ -190,7 +199,7 @@
 							</div>
 						</li>
 						<li class="catalog__item template" tabindex=0>
-							<img src="img/img-aplus.png" width="360" height="576" alt="aplus">
+							<img class="template__img" src="img/img-aplus.png" width="360" height="576" alt="aplus">
 							<div class="template__action">
 								<h4 class="template__title">
 									<a class="template__title-link" href="catalog/aplus.html">A plus</a>
@@ -200,7 +209,7 @@
 							</div>
 						</li>
 						<li class="catalog__item template" tabindex=0>
-							<img src="img/img-kvast.png" width="360" height="576" alt="kvast">
+							<img class="template__img" src="img/img-kvast.png" width="360" height="576" alt="kvast">
 							<div class="template__action">
 								<h4 class="template__title">
 									<a class="template__title-link" href="catalog/kvast.html">Кваст</a>
@@ -293,6 +302,6 @@
 	</article>
 
 
-	<script src="js/popup.js"></script>
+	<script src="js/popup.min.js"></script>
 </body>
 </html>
