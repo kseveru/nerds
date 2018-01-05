@@ -976,8 +976,6 @@ img {
   padding-left: 35px;
 
   line-height: 20px;
-
-  cursor: pointer;
 }
 
 .filter__radio-name::before {
