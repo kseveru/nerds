@@ -1,5 +1,3 @@
-/* ===== WRITE US ===== */
-
 var writeUsLink = document.querySelector(".our-address__link");
 var writeUsOpen = document.querySelector(".write-us");
 
@@ -32,29 +30,19 @@ if (writeUsLink && writeUsOpen) {
   });
 
   writeUsForm.addEventListener("submit", function (evt) {
-    if (!userName.value || !userEmail.value || !userText.value) {
-      evt.preventDefault();
-      writeUsOpen.classList.remove("popup--error");
-      writeUsOpen.offsetWidth = writeUsOpen.offsetWidth;
-      writeUsOpen.classList.add("popup--error");
-    }
-    else {
       localStorage.setItem("userName", userName.value);
       localStorage.setItem("userEmail", userEmail.value);
-    }
   });
 
   writeUsClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     writeUsOpen.classList.remove("popup--show");
-    writeUsOpen.classList.remove("popup--error");
   });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       if (writeUsOpen.classList.contains("popup--show")) {
         writeUsOpen.classList.remove("popup--show");
-        writeUsOpen.classList.remove("popup--error");
       }
     }
   });

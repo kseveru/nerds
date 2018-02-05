@@ -147,7 +147,6 @@
     <section class="our-contacts">
       <h2 class="hidden">Где мы находимся</h2>
       <img class="our-contacts__map" src="img/map.png" width="1440" height="416" alt="Как добраться: ул. Б. Конюшенная, д. 19/8">
-      <!--<iframe class="our-contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1513717141447" width="1200" height="416" allowfullscreen></iframe>-->
       <iframe class="our-contacts__map-iframe" src="https://yandex.ru/map-widget/v1/-/CBUtRIDd~C" width="1200" height="416" title="Как добраться: ул. Б. Конюшенная, д. 19/8"></iframe>
       <div class="our-address-wrap page-container">
         <article class="our-address">
@@ -165,9 +164,9 @@
         <p class="social__text">Скидка 10% для друзей из социальных сетей</p>
       </div>
       <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com"><span class="hidden">Мы во Вконтакте</span></a></li>
-        <li class="social__item"><a class="social__link social__link--fb" href="https://www.facebook.com"><span class="hidden">Мы в Фейсбуке</span></a></li>
-        <li class="social__item"><a class="social__link social__link--inst" href="https://www.instagram.com"><span class="hidden">Мы в Инстаграме</span></a></li>
+        <li class="social__item"><a class="social__link social__link--vk" href="#"><span class="hidden">Мы во Вконтакте</span></a></li>
+        <li class="social__item"><a class="social__link social__link--fb" href="#"><span class="hidden">Мы в Фейсбуке</span></a></li>
+        <li class="social__item"><a class="social__link social__link--inst" href="#"><span class="hidden">Мы в Инстаграме</span></a></li>
       </ul>
     </aside>
   </footer>
@@ -181,15 +180,15 @@
     <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
       <p class="write-us__item">
         <label class="write-us__label" for="write-us-name">Ваше имя:</label>
-        <input class="write-us__input input-reset" id="write-us-name" name="name" type="text" value="" placeholder="Представьтесь, пожалуйста" autocomplete="on">
+        <input class="write-us__input input-reset" id="write-us-name" name="name" type="text" value="" placeholder="Представьтесь, пожалуйста" autocomplete="on" required>
       </p>
       <p class="write-us__item">
         <label class="write-us__label" for="write-us-email">Ваш e-mail:</label>
-        <input class="write-us__input input-reset" id="write-us-email" name="email" type="email" value="" placeholder="Для отправки ответа" autocomplete="on">
+        <input class="write-us__input input-reset" id="write-us-email" name="email" type="email" value="" placeholder="Для отправки ответа" autocomplete="on" required>
       </p>
       <p class="write-us__item write-us__item--text">
         <label class="write-us__label" for="write-us-text">Текст письма:</label>
-        <textarea class="write-us__input write-us__input--textarea input-reset" id="write-us-text" name="text" cols="30" rows="4" placeholder="В свободной форме" spellcheck></textarea>
+        <textarea class="write-us__input write-us__input--textarea input-reset" id="write-us-text" name="text" cols="30" rows="4" placeholder="В свободной форме" spellcheck required></textarea>
       </p>
       <button class="write-us__send btn btn--red btn-reset" type="submit">Отправить</button>
     </form>

@@ -1388,26 +1388,12 @@ img {
   100% {opacity: 1;}
 }
 
-@-webkit-keyframes error {
-  50% {background-color: #ff5257;}
-}
-@keyframes error {
-  50% {background-color: #ff5257;}
-}
-
 /* ===================================== */
 
 .popup--show {
   display: block;
   -webkit-animation-name: appearance;
           animation-name: appearance;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-}
-
-.popup--error {
-  -webkit-animation-name: error;
-          animation-name: error;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
 }
