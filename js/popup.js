@@ -30,8 +30,8 @@ if (writeUsLink && writeUsOpen) {
   });
 
   writeUsForm.addEventListener("submit", function (evt) {
-      localStorage.setItem("userName", userName.value);
-      localStorage.setItem("userEmail", userEmail.value);
+    localStorage.setItem("userName", userName.value);
+    localStorage.setItem("userEmail", userEmail.value);
   });
 
   writeUsClose.addEventListener("click", function (evt) {
