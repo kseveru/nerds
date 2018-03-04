@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>«Нёрдс» - дизайн-студия</title>
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -34,7 +33,9 @@
       </nav>
 
       <ul class="user-tools">
-        <li class="user-tools__item"><a class="user-tools__link user-tools__link--icon user-tools__link--cart" href="#">Корзина</a></li>
+        <li class="user-tools__item">
+          <a class="user-tools__link user-tools__link--icon user-tools__link--cart" href="#">Корзина</a>
+        </li>
       </ul>
     </div>
   </header>
@@ -172,9 +173,21 @@
         <p class="social__text">Скидка 10% для друзей из социальных сетей</p>
       </div>
       <ul class="social__list">
-        <li class="social__item"><a class="social__link social__link--vk" href="#" title="Мы во Вконтакте"></a></li>
-        <li class="social__item"><a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке"></a></li>
-        <li class="social__item"><a class="social__link social__link--inst" href="#" title="Мы в Инстаграме"></a></li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" title="Мы во Вконтакте">
+            <span class="hidden">Мы во Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" title="Мы в Фейсбуке">
+            <span class="hidden">Мы в Фейсбуке</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#" title="Мы в Инстаграме">
+            <span class="hidden">Мы в Инстаграме</span>
+          </a>
+        </li>
       </ul>
     </aside>
   </footer>
